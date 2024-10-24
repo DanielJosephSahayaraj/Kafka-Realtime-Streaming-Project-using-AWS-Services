@@ -13,8 +13,8 @@ spark = SparkSession \
     .getOrCreate()
 
 # Kafka topic and brokers
-kafka_topic = "test_topic"
-kafka_bootstrap_servers = "localhost:9092"
+kafka_topic = "MyTopic"
+kafka_bootstrap_servers = "arn:aws:kafka:us-east-1:022499033696:cluster/kafka-project/38ab44c1-e264-4fb8-bcda"
 
 # Define the schema for incoming JSON data
 schema = StructType() \
@@ -52,7 +52,7 @@ def write_to_s3(batch_df, batch_id):
     records = batch_df.toJSON().collect()
     for record in records:
         # You can create a file-like structure and upload it to S3
-        s3.put_object(Body=record, Bucket='your-s3-bucket', Key=f'kafka_data/{batch_id}.json')
+        s3.put_object(Body=record, Bucket='kafka-test-danny', Key=f'kafka_data/{batch_id}.json')
 
 filtered_df.writeStream.foreachBatch(write_to_s3).start()
 
