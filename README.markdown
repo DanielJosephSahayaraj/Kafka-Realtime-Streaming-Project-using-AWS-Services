@@ -54,10 +54,6 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - Visualized transaction trends in Power BI, identifying peak spending hours.
 - Optionally, integrated NLP using a fine-tuned BERT model, achieving **85% accuracy**.
 
-## Screenshots
-- AWS MSK Console: ![MSK Setup](screenshots/aws_msk_console.png)
-- Pipeline Output: ![Output](screenshots/output_sample.png)
-- Power BI Dashboard: ![Dashboard](screenshots/power_bi_dashboard.png)
 
 ## Future Improvements
 - Integrate an LLM to analyze text data in the stream.
@@ -65,5 +61,5 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - Add anomaly detection using machine learning models.
 
 ## Contact
-- GitHub: [Danielmichaelraj] https://github.com/DanielJosephSahayaraj
-- LinkedIn: [Your LinkedIn] https://www.linkedin.com/in/daniel-joseph-sahayaraj-aws-engineer/
+- GitHub: [Daniel Joseph] [https://github.com/DanielJosephSahayaraj]
+- LinkedIn: [Daniel Joseph] [https://www.linkedin.com/in/daniel-joseph-sahayaraj-aws-engineer/]
