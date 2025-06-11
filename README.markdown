@@ -13,16 +13,15 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - **Other**: Boto3, YAML for configuration
 
 ## Dataset
-- Generated random transaction data (e.g., `{ "transaction_id": 123, "amount": 45.67, "timestamp": "2025-06-11T09:24:00" }`) using a Python producer.
-- Optionally, extended to include text data (e.g., customer reviews) for NLP analysis.
+- Generated random transaction data `{ "transaction_id": 123, "amount": 45.67, "timestamp": "2025-06-11T09:24:00" } using a Python producer.
+- Optionally, extended to include text data for NLP analysis.
 
 ## Pipeline Architecture
-![Pipeline Diagram](screenshots/pipeline_diagram.png)
 
 1. **Producer**: A Python script generates random transaction data and publishes it to an AWS MSK topic.
-2. **Consumer**: A Spark Streaming application consumes data from the topic, processes it (e.g., aggregates transaction amounts), and writes results to S3.
+2. **Consumer**: A Spark Streaming application consumes data from the topic, processes it and writes results to S3.
 3. **Storage**: AWS S3 stores raw and processed data.
-4. **Lambda**: Triggers real-time analytics (e.g., anomaly detection) on incoming data.
+4. **Lambda**: Triggers real-time analytics on incoming data.
 5. **Visualization**: Power BI dashboard displays transaction trends and insights.
 
 ## Setup Instructions
@@ -37,7 +36,7 @@ This project showcases my expertise in building cloud-based data pipelines, inte
    ```
 3. **Configure AWS MSK and VPC**:
    - Set up an AWS MSK cluster and VPC using the provided `config/vpc_config.json`.
-   - Create a Kafka topic (e.g., `transactions`) using `config/kafka_config.yaml`.
+   - Create a Kafka topic using `config/kafka_config.yaml`.
 4. **Run Producer**:
    ```bash
    python src/producer.py
@@ -53,7 +52,7 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - Processed **10,000 transactions/minute** with AWS MSK and Spark.
 - Achieved **99.9% uptime** for the streaming pipeline.
 - Visualized transaction trends in Power BI, identifying peak spending hours.
-- Optionally, integrated NLP (e.g., sentiment analysis of customer reviews) using a fine-tuned BERT model, achieving **85% accuracy**.
+- Optionally, integrated NLP using a fine-tuned BERT model, achieving **85% accuracy**.
 
 ## Screenshots
 - AWS MSK Console: ![MSK Setup](screenshots/aws_msk_console.png)
@@ -61,10 +60,10 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - Power BI Dashboard: ![Dashboard](screenshots/power_bi_dashboard.png)
 
 ## Future Improvements
-- Integrate an LLM (e.g., BERT) to analyze text data (e.g., customer feedback) in the stream.
+- Integrate an LLM to analyze text data in the stream.
 - Deploy the pipeline on AWS ECS for scalability.
 - Add anomaly detection using machine learning models.
 
 ## Contact
-- GitHub: [Danielmichaelraj](https://github.com/Danielmichaelraj)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: [Danielmichaelraj] https://github.com/DanielJosephSahayaraj
+- LinkedIn: [Your LinkedIn] https://www.linkedin.com/in/daniel-joseph-sahayaraj-aws-engineer/
