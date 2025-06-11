@@ -61,5 +61,5 @@ This project showcases my expertise in building cloud-based data pipelines, inte
 - Add anomaly detection using machine learning models.
 
 ## Contact
-- GitHub: [Daniel Joseph][https://github.com/DanielJosephSahayaraj]
-- LinkedIn: [Daniel Joseph][https://www.linkedin.com/in/daniel-joseph-sahayaraj-aws-engineer/]
+- GitHub: [Daniel Joseph](https://github.com/Danielmichaelraj)
+- LinkedIn: [Daniel Joseph](https://www.linkedin.com/in/daniel-joseph-sahayaraj-aws-engineer/)
